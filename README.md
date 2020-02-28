@@ -27,3 +27,11 @@ SBT (`build.sbt`):
 
     resolvers += Resolver.mavenLocal
     libraryDependencies += "io.github.izgzhen" %% "msbase" % "0.1"
+
+Github Actions:
+
+    - name: Install msbase.scala
+      run: |
+        git clone https://github.com/izgzhen/msbase.scala ../msbase.scala
+        cd ../msbase.scala
+        sbt publishM2
