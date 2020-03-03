@@ -1,6 +1,14 @@
 msbase.scala
 =======
 
+## Use with Jitpack Repo
+
+[![](https://jitpack.io/v/izgzhen/msbase.scala.svg)](https://jitpack.io/#izgzhen/msbase.scala)
+
+See https://jitpack.io/#izgzhen/msbase.scala for instructions.
+
+## Use locally
+
 Install at local maven repo:
 
     sbt publishM2
