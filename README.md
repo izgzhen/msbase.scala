@@ -20,6 +20,14 @@ Maven (`pom.xml`):
         <artifactId>msbase_2.13</artifactId>
         <version>0.1</version>
     </dependency>
+    
+or
+    
+    <dependency>
+      <groupId>com.github.izgzhen</groupId>
+      <artifactId>msbase.scala</artifactId>
+      <version>master-SNAPSHOT</version>
+    </dependency>
 
 Gradle (`build.gradle`):
 
