@@ -4,7 +4,8 @@ import java.io.{BufferedWriter, File, FileWriter}
 
 import scala.jdk.CollectionConverters._
 
-/* Created at 5/3/20 by zhen */
+import scala.io.Source
+
 object IOUtil {
   def writeLines(lines: List[String], dest: String): Unit = {
     val file = new File(dest)
@@ -22,5 +23,12 @@ object IOUtil {
     val bw = new BufferedWriter(new FileWriter(file))
     bw.write(s)
     bw.close()
+  }
+
+  def readLines(filename: String): Iterable[String] = {
+    val source = Source.fromFile(filename)
+    val lines = source.getLines()
+    source.close()
+    lines.toList
   }
 }
