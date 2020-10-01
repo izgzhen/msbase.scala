@@ -25,10 +25,10 @@ object IOUtil {
     bw.close()
   }
 
-  def readLines(filename: String): Iterable[String] = {
+  def readLines(filename: String): List[String] = {
     val source = Source.fromFile(filename)
-    val lines = source.getLines()
+    val lines = source.getLines().toList
     source.close()
-    lines.toList
+    lines
   }
 }
